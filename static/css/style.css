@@ -1,0 +1,71 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 300px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(28, 20px);
+    grid-template-rows: repeat(28, 20px);
+    margin: 20px 0 40px 0;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+}
+
+.cell.active {
+    background-color: black;
+}
+
+.controls {
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ECEE81;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(98, 164, 165)
+}
+
+button:active {
+    background-color: rgb(98, 164, 165)
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#guess-result {
+    height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+}
